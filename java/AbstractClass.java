@@ -1,4 +1,7 @@
 abstract class math{
+	math(){
+		System.out.println("abstract class");
+	}
 	abstract int add(int x,int y);
 }
 class addition extends math{
