@@ -1,0 +1,14 @@
+javac -d . Calculator.java
+
+javac -d . Packagedemo.java
+
+java Calculator.PackageDemo
+
+
+
+
+javac -d . mammalInt.java
+
+javac -d . Animals.java
+
+java Animals.Animals
