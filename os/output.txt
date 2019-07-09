@@ -1,0 +1,64 @@
+D:\os>javac Inventory.java
+
+D:\os>java Inventory
+Child thread:Thread[Test Thread,5,main]
+----------
+Main thread : 3
+----------
+Quantity ordered:500
+Quantity at hand:482
+Total quantity taken away by way of order:18
+Quantity ordered:482
+Quantity at hand:438
+Total quantity taken away by way of order:62
+Quantity ordered:438
+Quantity at hand:405
+Total quantity taken away by way of order:95
+Quantity ordered:405
+Quantity at hand:398
+Total quantity taken away by way of order:102
+Quantity ordered:398
+Quantity at hand:339
+Total quantity taken away by way of order:161
+----------
+Main thread : 2
+----------
+----------
+Main thread : 1
+----------
+
+
+D:\os>javac Stock.java
+Note: Stock.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+D:\os>java Stock
+stock added: 676
+present stock: 676
+stock added: 924
+present stock: 1600
+stock added: 689
+present stock: 2289
+stock added: 171
+present stock: 2460
+stock added: 380
+present stock: 2840
+stock added: 467
+present stock: 3307
+stock added: 598
+present stock: 3905
+stock added: 340
+present stock: 4245
+stock added: 484
+present stock: 4729
+stock added: 781
+present stock: 5510
+stock added: 546
+present stock: 6056
+stock added: 717
+present stock: 6773
+stock added: 867
+present stock: 7640
+Thread stopped
+
+
