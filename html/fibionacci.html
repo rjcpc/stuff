@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>
+		Javascript | fibionacci
+	</title>
+<style type=text/css>
+	body{
+		margin-top:200px;
+		text-align:center;
+		color:#333;
+		background-color:lightgrey;
+		font-size:350%;
+		font-family:monospace;
+	}
+	input{
+		size:400%;
+		width:20%;
+		padding:5px 5px;
+		color:#444;
+	}
+	button{
+		
+		border:        1px solid #fff;
+		border-radius: 5px;
+		padding:5px 5px;
+		display:       inline-block;
+		text-align:    center;
+		color:green;
+	}
+</style>
+<script type=text/javascript>
+	
+	function fibionacci(num){
+		if(num>20){
+			document.write('<h1>This script only calculates upto n=20<h1>');
+		}else if (num <=0){
+			document.write('<h1>Only fibionacci of positive numbers is defined<h1>');
+		}else if (num ==1){
+			return 1;
+		}else if (num ==2){
+			return 2;
+		}else {
+			var currentValue=fibionacci(num-1)+fibionacci(num-2)
+			return currentValue;
+		}
+		
+	}
+
+function fibionacciNow(){
+	var x=Number(document.getElementById("num").value);
+	var fib =fibionacci(x);
+	document.getElementById("answer").value= "fibionacci for n="+x+":"+fib;
+}
+
+</script>
+</head>
+	<body>
+		Enter Number:
+		<br/>
+		<input id="num" placeholder="number">
+			<button onclick="fibionacciNow()" class ='red button'>
+				Fibionacci
+			</button>
+		<input id="answer" placeholder="answer">
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title> 
+		css
+	</title>
+	<style>
+	
+		body{
+		color:#444;
+		font-size:350%;
+		font-family:monospace;
+		}
+		
+	</style>
+	<script>
+		function reverse(){
+		while(num>0){
+			var temp=0;
+				var num=(document.getElementById("no_input").value);
+				if (!num){
+					document.write("Error");
+				
+				}else{
+					var a=num%10;
+					num=parseInt(num/10);
+					temp=temp*10+a;
+				}
+				alert(temp);
+		}
+			
+		}
+	</script>
+</head>
+<body style="background-color:#eee;text-align:center;padding:25px;">
+
+
+	Enter any Number:
+	<input id="no_input">
+	<button onclick="reverse()">
+		Check
+	</button>
+	</br>
+
+
+
+</body>
+</html>
+
