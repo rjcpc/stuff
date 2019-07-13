@@ -65,6 +65,7 @@ end;
 declare
 v_counter number(2) :=1;
 v_number number(2):=1;
+
 begin
 dbms_output.put_line('before loop: counter='||to_char(v_counter));
 dbms_output.put_line('before loop: number='||to_char(v_number));
@@ -74,10 +75,11 @@ loop
 dbms_output.put_line(to_char(v_number));
 v_counter:=v_counter+1;
 v_number:=v_number+2;
+
+end loop;
 dbms_output.put_line('#############################');
 dbms_output.put_line('after loop: counter='||to_char(v_counter));
 dbms_output.put_line('after loop: number='||to_char(v_number));
-end loop;
 end;
 /
 
