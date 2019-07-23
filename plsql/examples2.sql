@@ -90,3 +90,34 @@ DBMS_OUTPUT.PUT_LINE('Minimum of 23 and 45 is '||c);
 end;
 /
 
+--declare procedure within a plsql block
+declare
+a number;
+procedure square_it(x in out number) IS
+begin
+	x:=x*x;
+	end;
+begin
+a:=23;
+square_it(a);
+DBMS_OUTPUT.PUT_LINE('square of  23  is '||a);
+end;
+/
+
+--declare function
+CREATE OR REPLACE FUNCTION TOTAL_IT
+RETURN NUMBER
+	IS TOTAL NUMBER(2):=0;
+	BEGIN SELECT COUNT(*) INTO TOTAL FROM EMPLOYEE;
+	RETURN TOTAL;
+	END;
+/
+--use function within a plsql block
+DECLARE
+C NUMBER(2);
+BEGIN
+C:=TOTAL_IT();
+DBMS_OUTPUT.PUT_LINE('Total number of employees is '||C);
+END;
+/
+
