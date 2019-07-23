@@ -90,7 +90,7 @@ DBMS_OUTPUT.PUT_LINE('Minimum of 23 and 45 is '||c);
 end;
 /
 
---declare procedure within a plsql block
+--declare procedure within a plsql block  and use it directly
 declare
 a number;
 procedure square_it(x in out number) IS
@@ -121,3 +121,79 @@ DBMS_OUTPUT.PUT_LINE('Total number of employees is '||C);
 END;
 /
 
+
+--declare function within a plsql block  and use it directly
+DECLARE
+A NUMBER;
+B NUMBER;
+C NUMBER;
+FUNCTION FIND_MAX(X IN NUMBER, Y IN NUMBER)	
+	RETURN NUMBER
+	IS
+	Z NUMBER; 
+BEGIN
+		IF X>Y THEN 
+		Z:=X;
+		ELSE
+		Z:=Y;
+	END IF;
+	RETURN Z;
+	END;
+BEGIN
+A:=44;
+B:=55;
+C:=FIND_MAX(A,B);
+DBMS_OUTPUT.PUT_LINE('Maximum number is '||C);
+END;
+/
+
+
+--RECURSIVE FUNCTION
+DECLARE  
+NUM NUMBER;
+FACTORIAL NUMBER;
+FUNCTION FACT(X NUMBER)
+	RETURN NUMBER
+	IS
+	F NUMBER;
+BEGIN
+IF X=0 
+	THEN
+		F:=1;
+	ELSE
+		F:=X*FACT(X-1);
+END IF;
+RETURN F;
+END;
+BEGIN
+NUM:=5;
+FACTORIAL:=FACT(NUM);
+DBMS_OUTPUT.PUT_LINE('Factorial OF  '|| NUM ||' IS '|| FACTORIAL);
+END;
+/
+
+--SAVEPOINT DEMO
+DECLARE
+VAR_SAL EMP.SAL%TYPE;
+BEGIN SELECT SAL INTO VAR_SAL FROM EMP WHERE EMPNO=7844;
+DBMS_OUTPUT.PUT_LINE('Salary is '||VAR_SAL||'(ORIGINAL)');
+--
+UPDATE EMP SET SAL=SAL*1.1;
+SELECT SAL INTO VAR_SAL FROM EMP WHERE EMPNO=7844;
+DBMS_OUTPUT.PUT_LINE('Salary '||VAR_SAL||'(Before Savepoint A)');
+SAVEPOINT A;
+--
+UPDATE EMP SET SAL=SAL*0.8;
+SELECT SAL INTO VAR_SAL FROM EMP WHERE EMPNO=7844;
+DBMS_OUTPUT.PUT_LINE('Salary :'||VAR_SAL||'(Savepoint A)');
+SAVEPOINT B;
+--
+UPDATE EMP SET SAL=SAL*1.3;
+SELECT SAL INTO VAR_SAL FROM EMP WHERE EMPNO=7844;
+DBMS_OUTPUT.PUT_LINE('Salary :'||VAR_SAL||'(Savepoint B)');
+ROLLBACK TO SAVEPOINT B;
+--
+SELECT SAL INTO VAR_SAL FROM EMP WHERE EMPNO=7844;
+DBMS_OUTPUT.PUT_LINE('Salary :'||VAR_SAL||'(Rollback B)');
+END;
+/
