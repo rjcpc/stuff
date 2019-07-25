@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>a page with back button</title>
+	<style>
+	body{
+		color:#444;
+		background-color:#eee;
+		font-size:350%;
+		font-family:monospace;
+		padding:50px;
+	}
+	button{
+		color:#333;
+		background-color:lightgrey;
+		padding:5px;
+		font-size:300%;
+		font-family:arial;
+		border-radius:5px;
+		border:1px solid blue;
+	}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+	function goBack(){
+		window.history.back();
+	}
+	</script>
+	<button onclick="goBack()" >go Back</button>
+</body>
+</html>
