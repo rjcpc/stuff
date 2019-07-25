@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>a page with title</title>
+	<style>
+	body{
+		color:#444;
+		background-color:#eee;
+		font-size:350%;
+		font-family:monospace;
+		padding:50px;
+	}
+	button{
+		color:#333;
+		background-color:lightgrey;
+		padding:5px;
+		font-size:300%;
+		font-family:arial;
+		border-radius:5px;
+		border:1px solid blue;
+	}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+	function writeCookie(){
+		if (document.myform.customer.value==""){
+			alert("Name required!");
+			return;
+		}
+		cookievalue=escape(document.myform.customer.value+";");
+		document.cookie="name="+cookievalue;
+		document.write("Setting cookie : "+"name= "+cookievalue);
+		document.write("<br/>"+document.cookie);
+	}
+	</script>
+	<form name="myform" action="">
+	Enter name: <input type="text" name="customer"></input>
+	<input type="button" value="setcookie " onclick="writeCookie()"></input>
+	</form>
+</body>
+</html>
