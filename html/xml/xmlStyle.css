@@ -1,0 +1,9 @@
+employee{
+	background-color:lightgrey;
+}
+firstname,lastname,email{
+	font-size:32px;
+	display:block;
+	color:teal;
+	margin:100px;
+}

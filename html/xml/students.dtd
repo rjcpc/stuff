@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--a document type definition-->
+<!ELEMENT students (student+)>
+<!ELEMENT student (name,address)>
+<!ELEMENT name (firstname,lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT address (street,city,email,phone)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>

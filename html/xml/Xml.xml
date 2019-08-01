@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="xmlStyle.css"?>
+<!DOCTYPE employee[
+	<!ELEMENT employee (firstname,lastname,email)>
+	<!ELEMENT firstname (#PCDATA)>
+	<!ELEMENT lastname (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+]>
+<employee>
+	<firstname>
+		James 
+	</firstname>
+	<lastname>
+		Bond
+	</lastname>
+	<email>
+		bondjamesbond@example.com
+	</email>
+</employee>

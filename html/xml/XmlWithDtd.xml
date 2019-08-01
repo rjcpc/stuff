@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xmlWithDtd.xsl"?>
+<!DOCTYPE  students SYSTEM "students.dtd">
+
+<students>
+	<student>
+		<name>
+			<firstname>
+				Sherlock
+			</firstname>
+			<lastname>
+				Holmes
+			</lastname>
+		</name>
+		<address>
+			<street>
+				Baker Street
+			</street>
+			<city>
+				London
+			</city>
+			<email>
+				thedetective@example.com
+			</email>
+			<phone>
+				9999999999
+			</phone>
+		</address>
+	</student>
+<student>
+		<name>
+			<firstname>
+				P.
+			</firstname>
+			<lastname>
+				Sherman
+			</lastname>
+		</name>
+		<address>
+			<street>
+				Wallaby way
+			</street>
+			<city>
+				Sydney
+			</city>
+			<email>
+				thedentist@example.com
+			</email>
+			<phone>
+				0000000000
+			</phone>
+		</address>
+	</student>
+	
+</students>
