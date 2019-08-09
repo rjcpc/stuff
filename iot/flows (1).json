@@ -1,0 +1,1 @@
+[{"id":"db06b725.e4c518","type":"rpi-gpio out","z":"5266c424.3c801c","name":"led","pin":"11","set":"","level":"0","freq":"","out":"out","x":580,"y":180,"wires":[]}]
