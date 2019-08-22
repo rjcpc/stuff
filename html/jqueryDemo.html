@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>a page with title</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	
+	<style>
+	body{
+		color:#444;
+		background-color:#eee;
+		font-size:350%;
+		font-family:monospace;
+		padding:50px;
+	}
+	button{
+		color:#333;
+		background-color:lightgrey;
+		padding:5px;
+		
+		font-family:arial;
+		border-radius:5px;
+		border:1px solid blue;
+	}
+	div{
+		background-color:teal;
+		text-align:center;
+		max-width:80%;
+	}
+	</style>
+</head>
+<body>
+<button class="big">bigger</button>
+<div>click a button</div>
+<button class="small">smaller</button>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("button.big").click(function(){
+			$("div").animate({
+				left: '250px',
+				height: '+=150px',
+				width: '+=150px'
+			});
+		});
+		$("button.small").click(function(){
+			$("div").animate({
+				
+				height: '-=150px',
+				width: '-=150px'
+			});
+		});
+	});
+	</script>
+</body>
+</html>

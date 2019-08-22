@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>a page with title</title>
+	<style>
+	body{
+		color:#444;
+		background-color:#eee;
+		font-size:350%;
+		font-family:monospace;
+		padding:50px;
+	}
+	button{
+		color:#333;
+		background-color:lightgrey;
+		padding:5px;
+		font-size:300%;
+		font-family:arial;
+		border-radius:5px;
+		border:1px solid blue;
+	}
+	</style>
+</head>
+<body>
+<h1> ajax xml httpRequestAsynchronous Request</h1>
+<button type=button onmouseover="showFile()">show the file </button>
+<script type="text/javascript">
+	function showFile(){
+		var xhttp=new XMLHttpRequest();
+		xhttp.onreadystatechange=function(){
+			if ( this.readyState==4 && this.status==200){
+				document.write(this.responseText);
+				console.log("here");
+			}
+		}
+		xhttp.open("GET","./license.txt",true);
+		xhttp.send();
+	}
+	</script>
+</body>
+</html>
