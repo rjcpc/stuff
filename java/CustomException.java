@@ -1,3 +1,8 @@
+/*
+Can be a voter
+Exception occured : InvalidAgeException: invalid age
+completed
+*/
 class InvalidAgeException extends Exception{
 	InvalidAgeException(String s){
 		super(s);
