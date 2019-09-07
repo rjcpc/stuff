@@ -1,3 +1,18 @@
+/*
+Output:
+
+C:\Users\admin\Desktop>javac ListDemo.java
+Note: ListDemo.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+C:\Users\admin\Desktop>java ListDemo
+ Array1 List : [1, 3]
+ ArrayAll List : [1, 1, 2, 3, 3]
+ ArrayDel List : [1, 2, 3, 3]
+ Array get intex(3) : 3
+ Array List : [5, 2, 3, 3]
+ 
+*/
 import java.util.*;
 public class ListDemo{
 	public static void main(String[] args){
