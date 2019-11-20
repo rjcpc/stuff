@@ -1,0 +1,4 @@
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\REverseNumber\REverseNumber\bin\Debug\REverseNumber.exe
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\REverseNumber\REverseNumber\bin\Debug\REverseNumber.pdb
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\REverseNumber\REverseNumber\obj\x86\Debug\REverseNumber.exe
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\REverseNumber\REverseNumber\obj\x86\Debug\REverseNumber.pdb

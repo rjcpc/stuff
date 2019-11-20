@@ -1,0 +1,4 @@
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\NumberToText\NumberToText\bin\Debug\NumberToText.exe
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\NumberToText\NumberToText\bin\Debug\NumberToText.pdb
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\NumberToText\NumberToText\obj\x86\Debug\NumberToText.exe
+D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\NumberToText\NumberToText\obj\x86\Debug\NumberToText.pdb
