@@ -40,9 +40,8 @@ while True:
       elif choice==4:
             print('Dot product of two vectors is : \n',dot(u,v))
       elif choice==5:
-            from sys import exit
             print("Exit ")
-            exit()
+            break
       else:
             print("Invalid Choice")
 
