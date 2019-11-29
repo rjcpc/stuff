@@ -10,3 +10,15 @@
 4. Using packet tracer, create a wireless network of multiple PCs using appropriate access point.
 
 5. Using Wireshark network analyzer set the filter for ICMP, TCP, HTTP, UDP, FTP and perform the respective transactions to show or prove that network analyzer is working.
+
+# answer template
+
+
+
+
+
+1. To start this practical first open CISCO  packet tracer, select a generic PC, select a generic router 1841, select another generic PC.
+
+2. Connect the PCs using appropriate connection type
+
+3. Select PC, go to desktop tab, select IP configuration, select static, Give unique IP addresses to each PC and Gateway address as the address of router.
