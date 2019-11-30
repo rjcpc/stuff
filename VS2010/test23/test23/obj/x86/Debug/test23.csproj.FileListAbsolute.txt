@@ -1,4 +1,0 @@
-c:\users\admin\documents\visual studio 2010\Projects\test23\test23\bin\Debug\test23.exe
-c:\users\admin\documents\visual studio 2010\Projects\test23\test23\bin\Debug\test23.pdb
-c:\users\admin\documents\visual studio 2010\Projects\test23\test23\obj\x86\Debug\test23.exe
-c:\users\admin\documents\visual studio 2010\Projects\test23\test23\obj\x86\Debug\test23.pdb

@@ -1,4 +1,0 @@
-D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\fibonaccie\fibonaccie\bin\Debug\fibonaccie.exe
-D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\fibonaccie\fibonaccie\bin\Debug\fibonaccie.pdb
-D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\fibonaccie\fibonaccie\obj\x86\Debug\fibonaccie.exe
-D:\Shyamkumar Yadav(SY)\VS2010\ReverseNumber\fibonaccie\fibonaccie\obj\x86\Debug\fibonaccie.pdb

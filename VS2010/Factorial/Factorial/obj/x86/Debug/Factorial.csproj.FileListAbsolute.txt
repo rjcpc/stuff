@@ -1,4 +1,0 @@
-c:\users\admin\documents\visual studio 2010\Projects\Factorial\Factorial\bin\Debug\Factorial.exe
-c:\users\admin\documents\visual studio 2010\Projects\Factorial\Factorial\bin\Debug\Factorial.pdb
-c:\users\admin\documents\visual studio 2010\Projects\Factorial\Factorial\obj\x86\Debug\Factorial.exe
-c:\users\admin\documents\visual studio 2010\Projects\Factorial\Factorial\obj\x86\Debug\Factorial.pdb
