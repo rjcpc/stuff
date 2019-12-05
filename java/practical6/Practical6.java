@@ -69,12 +69,14 @@ public abstract class Practical6 extends JFrame implements ActionListener{
                 ResultSetMetaData rsmd=rs.getMetaData();
                 System.out.println(rsmd.getColumnCount());
                 int i=0, j;
-                while (rs.next()){
-                    for(j=0; j<=rsmd.getColumnCount(); j++){
-                    System.out.print("|"+rs.getString(j)+"\t|");
-                }//for end
-                i++;
-            }//while end
+                while(rs.next())	
+                {	
+                    for(j=0;j<rsmd.getColumnCount();j++)	
+                    {	
+                        rows[i][j]=rs.getString(j+1);	
+                    }	
+                    i++;	
+                }
             tb = new JTable(rows, cols);
             jsp=new JScrollPane(tb);
             c.add(jsp);
