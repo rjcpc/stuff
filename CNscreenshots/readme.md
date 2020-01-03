@@ -11,7 +11,7 @@
 
 5. Using Wireshark network analyzer set the filter for ICMP, TCP, HTTP, UDP, FTP and perform the respective transactions to show or prove that network analyzer is working.
 
-6. sing cisco packet tracer connect router ,switch and PCs
+6. Using cisco packet tracer connect router ,switch and PCs
 
 
 7. using linux terminal or windows cmd execute the following commands and note the output
