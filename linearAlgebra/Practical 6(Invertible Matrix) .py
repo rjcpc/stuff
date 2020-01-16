@@ -51,7 +51,7 @@ if r == 2:
             printMatrix(M1)
 else:
     for i in range(3):
-        determinant = determinant + (M[0][i]*M[1][(i+1)%3]*M[2][(i+2)%3] - M[1][(i+2)%3]*M[2][(i+1)%3])
+        determinant = determinant + (M[0][i] * M[1][(i + 1) % 3] * M[2][(i + 2) % 3] - M[1][(i + 2) % 3] * M[2][(i + 1) % 3])
         print('Determinant ',determinant)
         if determinant == 0 :
             print('Matrix is Not Invertible. ')
@@ -61,7 +61,7 @@ else:
         for i in range(3):
             CFM.append([])
             for j in range(3):
-                v = (M[(i+1)%3][(j+1)%3] * M[(i+2)%3][(j+2)%3]) - (M[(i+1)%3][(j+2)%3] * M[(i+2)%3][(j+1)%3])
+                v = (M[(i + 1) % 3][(j + 1) % 3] * M[(i + 2) % 3][(j + 2) % 3]) - (M[(i + 1) % 3][(j + 2) % 3] * M[(i + 2) % 3][(j + 1) % 3])
                 CFM[i].append(v)
     print('Co-factor Matrix ')
     printMatrix(CFM)
@@ -71,7 +71,7 @@ else:
     for i in range(3):
         M1.append([])
         for j in range(3):
-            M1[i].append(AdjM[i][j]/determinant)
+            M1[i].append(AdjM[i][j] / determinant)
 
     print('Inverse of a Matrix M is : ')
     printMatrix(M1)
