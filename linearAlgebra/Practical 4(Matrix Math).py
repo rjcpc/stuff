@@ -51,17 +51,14 @@ for i in range(r):
               M[i].append(n)
 
 
-
-while True:
-       print('''
-Select Operation :
+print('''Select Operation :
        1. Display Matrix.
        2. Display Rows of Matrix.
        3. Display Columns of Matrix.
        4. Scalar Multiplication of Matrix.
        5. Transpose of matrix.
-       Other. Exit
-''')
+       Other. Exit''')
+while True:       
        ch = int(input("Enter Choice for Operation : "))
        if ch == 1:
               printM(M)
@@ -89,7 +86,6 @@ Enter No. : 3
 Enter Elements of Rows[1] : 
 Enter No. : 2
 Enter No. : 5
-
 Select Operation :
        1. Display Matrix.
        2. Display Rows of Matrix.
@@ -97,82 +93,32 @@ Select Operation :
        4. Scalar Multiplication of Matrix.
        5. Transpose of matrix.
        Other. Exit
-
 Enter Choice for Operation : 1
 The Enter Matrix A : 
 [1, 3]
 [2, 5]
-
-Select Operation :
-       1. Display Matrix.
-       2. Display Rows of Matrix.
-       3. Display Columns of Matrix.
-       4. Scalar Multiplication of Matrix.
-       5. Transpose of matrix.
-       Other. Exit
-
 Enter Choice for Operation : 2
 Row of Matrix A : 
 Row 0 = [1, 3]
 Row 1 = [2, 5]
-
-Select Operation :
-       1. Display Matrix.
-       2. Display Rows of Matrix.
-       3. Display Columns of Matrix.
-       4. Scalar Multiplication of Matrix.
-       5. Transpose of matrix.
-       Other. Exit
-
 Enter Choice for Operation : 3
 Coloumns of Matrix A : 
 Coloumns 0 = 
 1
 2
 
-
 Coloumns 1 = 
 3
 5
-
-
-
-Select Operation :
-       1. Display Matrix.
-       2. Display Rows of Matrix.
-       3. Display Columns of Matrix.
-       4. Scalar Multiplication of Matrix.
-       5. Transpose of matrix.
-       Other. Exit
-
 Enter Choice for Operation : 4
 Enter Scalar Value : 5
 The Scaler Multiplication s*M = 
 The Enter Matrix A : 
 [5, 15]
 [10, 25]
-
-Select Operation :
-       1. Display Matrix.
-       2. Display Rows of Matrix.
-       3. Display Columns of Matrix.
-       4. Scalar Multiplication of Matrix.
-       5. Transpose of matrix.
-       Other. Exit
-
 Enter Choice for Operation : 5
 Transpose of M  = 
 [1, 2]
 [3, 5]
-
-Select Operation :
-       1. Display Matrix.
-       2. Display Rows of Matrix.
-       3. Display Columns of Matrix.
-       4. Scalar Multiplication of Matrix.
-       5. Transpose of matrix.
-       Other. Exit
-
-Enter Choice for Operation : 78
-
+Enter Choice for Operation : 6
 '''
