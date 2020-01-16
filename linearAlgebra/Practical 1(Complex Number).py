@@ -12,9 +12,13 @@ import matplotlib.pyplot as plt
 
 s = {3 + 3j, 4 + 3j, 2.5 + 1j, 3.25 + 1j}
 
-print('Select Oprations\n1: Addition of two Complex No.\n2: Plot Points from set of Complex No.\n3: Translational\n4: Scaling\n5: Ratation\nAnything: Exit')
+print('''Select Oprations
+1: Addition of two Complex No.
+2: Plot Points from set of Complex No.
+3: Translational\n4: Scaling
+5: Ratation\nAnything: Exit''')
 
-while 'Shyamkumar':
+while True:
     
     ch = int(input('Enter Choice of Operation.'))
 
@@ -52,16 +56,11 @@ while 'Shyamkumar':
             print('Invalid AngleEnter Only degree 90, 180, 270\b')
     else:
         break
-            
-            
-        
-
-
-
-
+    
 '''
-1: goto C:python34/scripts/
-2: pip install matplotlib
+1: cd C:\python34\scripts 
+2: C:\python34\scripts> pip install matplotlib
+*** if Not Work use Python 2.x ***
 
 Output :
 >>> 
@@ -77,7 +76,7 @@ Enter Complex No. c1: 2+3j
 Enter Complex No. c2: 3+2j
 ('Addition of 2 Complex Nos(c1 + c2) : ', (5+5j))
 Enter Choice of Operation.2
-Path IMG="D:\SYBSCCS\[ Shyam 91 ]\[ Linear Algebra ]\Practical_1.png"
+Path IMG = "./Practical 1(Complex Number).png"
 Enter Choice of Operation.3
 Enter Translational in Complex No. Format: 4
 ('Translational of No. is: ', set([(7+3j), (8+3j), (6.5+1j), (7.25+1j)]))
@@ -88,5 +87,4 @@ Enter Choice of Operation.5
 Enter Angle f Rotation 30/180/270: 180
 ('Rotation of No. is: ', set([(-3.25-1j), (-4-3j), (-3-3j), (-2.5-1j)]))
 Enter Choice of Operation.6
-
 '''
