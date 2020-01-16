@@ -1,25 +1,27 @@
-a=[84,25,32,12,44]
-print("Array A is:",a)
+# Smallest Largest Array
+
+a = [84, 25, 32, 12, 44]
+print("Array A is: ",a)
 for i in range(len(a)):
-    min_ind=i
+    min_ind = i
     print(min_ind)
-    for j in range(i+1,len(a)):
-        if a[min_ind]>a[j]:
-            min_ind=j
-    print("elemnet swapping here")
-    a[i],a[min_ind]=a[min_ind],a[i]
-    print(a[i],a[min_ind])
-    print("Iteration %d:"%(i+1))
+    for j in range(i + 1, len(a)):
+        if a[min_ind] > a[j]:
+            min_ind = j
+    print("Elemnet swapping here")
+    a[i], a[min_ind] = a[min_ind], a[i]
+    print(a[i], a[min_ind])
+    print("Iteration {} :".format(i+1))
     print(a)
-    print("Smallest elemnet is:%d" %a[0])
-    print("Greatest element is :%d"%a[len(a)-1])
+    print("Smallest elemnet is:{} :".format(a[0]))
+    print("Greatest element is :{} ".format(a[len(a)-1]))
 
 '''
 Output:
 >>> 
 Array A is: [84, 25, 32, 12, 44]
 0
-elemnet swapping here
+Elemnet swapping here
 12 84
 Iteration 1:
 [12, 25, 32, 84, 44]
