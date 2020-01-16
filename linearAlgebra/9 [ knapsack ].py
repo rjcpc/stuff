@@ -1,3 +1,5 @@
+# Knapsack
+
 def knapsack(w, wt, val, n):
     if n == 0 or w == 0:
         return 0
@@ -18,4 +20,4 @@ print(knapsack(w, wt, val, n))
 Output:-
 >>>
 220
-'''    
+'''
