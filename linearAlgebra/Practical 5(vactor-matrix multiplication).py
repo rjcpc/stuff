@@ -30,12 +30,11 @@ def vecMatrixMul(v, A):
     C=[sum(v[j]*A[j][i] for j in range(len(v))) for i in range(len(A))]
     print('Matrix Vector Multiplication(v * MI) = ')
     printMatrix(C)
-
+# Matrix from User
 '''   
 print('Enter Dimension of Matrix1 : ')
 r1 = int(input('Enter No. of Rows : '))
 c1 = int(input('Enter No. of Columns : '))
-
 M = []
 for i in range(r1):
     print('Enter Elements of Row ',i)
@@ -43,19 +42,19 @@ for i in range(r1):
     for j in range(c1):
         n = int(input('Enter No. : '))
         M[i].append(n)
-'''        
+''' 
+# Matrix defined by me
 M = [[1,2],[3,4]]
 r1=2
 c1=2
 print('The Entered Matrix M1 is ')
 printMatrix(M)
 
+# Matrix from User
 '''
 print('Enter Dimension of Matrix2 : ')
 r2 = int(input('Enter No. of Rows : '))
 c2 = int(input('Enter No. of Columns : '))
-
-
 N = []
 for i in range(r2):
     print('Enter Elements of Row ',i)
@@ -63,7 +62,8 @@ for i in range(r2):
     for j in range(c2):
         n = int(input('Enter No. : '))
         N[i].append(n)
-'''        
+'''  
+# Matrix defined by me
 N = [[4,3],[2,1]]
 r2=2
 c2=2
@@ -78,9 +78,8 @@ print('''Select Opration
 anything : Exit
 ''')
 
-while "Shyamkumar":
+while True:
     ch = int(input('Enter Choice of opration '))
-
     if ch == 1:
         if (r1, c1) == (r2, c2):
             matrixAdd(M, N)
@@ -147,5 +146,4 @@ Matrix Vector Multiplication(v * MI) =
 17
 26
 Enter Choice of opration 5
-
 '''
