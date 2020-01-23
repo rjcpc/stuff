@@ -1,13 +1,13 @@
 # [Study material in PDF](https://drive.google.com/drive/folders/1E3J8fnVY-WhzAyWLaU7YIBq650AcuJAr)
 else use http://www.bit.ly/cssem4
 
-stuff from rjcpc only for stuff
+stuff from rjcpc 
 ***
 
 ```
 MIT License
 
-Copyright (c) 2019 rjcpc
+Copyright (c) 2019-2020 rjcpc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
