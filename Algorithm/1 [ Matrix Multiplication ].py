@@ -16,10 +16,6 @@ print("columns in A ", len(B[0]))
 
 result=[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 
-for row in A:
-    for row_element in row :
-        print(row_element)
-       # for something in B[0][]:
 # explicit for loops 
 for i in range(len(A)): 
     for j in range(len(B[0])): 
@@ -45,15 +41,7 @@ matrix B is
 [2, 3, 1, 4]
 rows in A  3
 columns in A  4
-1
-2
-4
-3
-4
-3
-5
-6
-2
+
 [[12, 37, 24, 17], [16, 66, 51, 15], [20, 95, 78, 13]]
 '''
             
