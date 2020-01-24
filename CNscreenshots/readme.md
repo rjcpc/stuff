@@ -2,12 +2,12 @@
 
 # Questions
 1. Create a packet tracer of two computers using appropriate network wire.
-     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p1.PNG)
+     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P1.PNG)
 
 2. Using packer tracer, connect multiple (minimum six) computers using layer two switch.
-    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p2.PNG)
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P2.PNG)
 3. Using packet tracer, connect a network in triangular shape with three layer two switches and every switch have three computer verify their connectivity. 
-    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p3.PNG)
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P3.PNG)
 4. Using packet tracer, create a wireless network of multiple PCs using appropriate access point.
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p4.PNG)
 5. Using Wireshark network analyzer set the filter for ICMP, TCP, HTTP, UDP, FTP and perform the respective transactions to show or prove that network analyzer is working.
