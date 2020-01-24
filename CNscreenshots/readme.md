@@ -39,3 +39,5 @@
 2. Connect the PCs using appropriate connection type
 
 3. Select PC, go to desktop tab, select IP configuration, select static, Give unique IP addresses to each PC and Gateway address as the address of router.
+
+
