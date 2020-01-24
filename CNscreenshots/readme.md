@@ -24,6 +24,10 @@
   
 8. Using cisco packet tracer establish connection between server and PCs with the help of router and switch
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P8.PNG)
+
+9. Perform Mesh topology network connection using cisco packet tracer.
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P9.PNG)
+
 # answer template
 
 
