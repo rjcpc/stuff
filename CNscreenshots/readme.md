@@ -2,17 +2,18 @@
 
 # Questions
 1. Create a packet tracer of two computers using appropriate network wire.
+     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p1.PNG)
 
 2. Using packer tracer, connect multiple (minimum six) computers using layer two switch.
-
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p2.PNG)
 3. Using packet tracer, connect a network in triangular shape with three layer two switches and every switch have three computer verify their connectivity. 
-
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p3.PNG)
 4. Using packet tracer, create a wireless network of multiple PCs using appropriate access point.
-
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/p4.PNG)
 5. Using Wireshark network analyzer set the filter for ICMP, TCP, HTTP, UDP, FTP and perform the respective transactions to show or prove that network analyzer is working.
-
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P5.PNG)
 6. Using cisco packet tracer connect router ,switch and PCs
-
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P6.PNG)
 
 7. using linux terminal or windows cmd execute the following commands and note the output
     + ping
@@ -20,8 +21,9 @@
     + netstat
     + arp
     + ipconfig
-
-
+  
+8. Using cisco packet tracer establish connection between server and PCs with the help of router and switch
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P8.PNG)
 # answer template
 
 
