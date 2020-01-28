@@ -10,9 +10,9 @@ print('Enter elements of second vector v : ')
 for i in range(l):
     n=int(input('Enter no : '))
     v.append(n)
-print('Enter elements of coeficient : ')
-c1=int(input('Enter first coeficent : '))
-c2=int(input('Enter second coeficient : '))
+print('Enter elements of coefficient : ')
+c1=int(input('Enter first coefficient : '))
+c2=int(input('Enter second coefficient : '))
 newface=[c1*u[i]+c2*v[i] for i in range(len(u))]
 print('New Face of u and v = ',newface)
 avgface=[(u[i]+v[i])/2 for i in range(len(u))]
