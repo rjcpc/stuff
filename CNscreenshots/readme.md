@@ -16,15 +16,20 @@
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P6.PNG)
 
 7. using linux terminal or windows cmd execute the following commands and note the output
-    ping
+    + ping
+    ---
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/7/ping.PNG)
-    traceroute / tracert
+    + traceroute / tracert
+    ---
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/7/tracert.PNG)
-    netstat
+    + netstat
+    ---
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/7/netstat.PNG)
-    arp
+    + arp
+    ---
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/7/arp_a.PNG)
-    ipconfig
+    + ipconfig
+    ---
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/7/ipconfig.PNG)
   
 8. Using cisco packet tracer establish connection between server and PCs with the help of router and switch
