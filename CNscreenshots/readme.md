@@ -37,7 +37,8 @@
 
 9. Perform Mesh topology network connection using cisco packet tracer.
     ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P9.PNG)
-
+10. Connect multiple devices to a network using DHCP.
+    ![](https://raw.githubusercontent.com/rjcpc/stuff/fourth/CNscreenshots/P10.PNG)
 # answer template
 
 
