@@ -1,16 +1,18 @@
-package com.example.practical12varunyadav;
+package edu.rjcollege.myapplication;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+
+
+public class MainActivity extends AppCompatActivity {
     MyDatabase mdb;
     SQLiteDatabase db;
     EditText user, pass;
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             Cursor c = db.rawQuery(str, null);
 
             if (c.moveToNext()) {
-                Toast.makeText(this, "Welcome user" + u, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Welcome user " + u, Toast.LENGTH_SHORT).show();
 
             } else {
                 Toast.makeText(this, "Either Username, password is wrong or user does not exist", Toast.LENGTH_SHORT).show();
@@ -42,21 +44,20 @@ public class MainActivity extends AppCompatActivity {
         } catch (SQLiteException e) {
             e.printStackTrace();
 
+        }}
+        public void register(View view) {
+            u = user.getText().toString();
+            p = pass.getText().toString();
+            String str = "insert into login values('" + u + "','" + p + "')";
+            db = mdb.getWritableDatabase();
+            db.execSQL(str);
+            Toast.makeText(this, "user " + u + " registered", Toast.LENGTH_SHORT).show();
+
+
         }
-
-
-    }
-
-    public void register(View view) {
-        u = user.getText().toString();
-        p = pass.getText().toString();
-        String str = "insert into login values('" + u + "','" + p + "')";
-        db = mdb.getWritableDatabase();
-        db.execSQL(str);
-        Toast.makeText(this, "user" + u + " registered", Toast.LENGTH_SHORT).show();
-
-
     }
 
 
-}
+
+
+
