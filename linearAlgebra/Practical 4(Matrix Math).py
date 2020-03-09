@@ -9,33 +9,40 @@ Aim: Write a program to do the following :
 '''
 global r, c
 
+
 def printM(A):
-       print("Matrix A : ")
-       for i in range(r):
-              print(A[i])
+    print("Matrix A : ")
+    for i in range(r):
+        print(A[i])
+
 
 def printRM(A):
-       print("Row of Matrix A : ")
-       for i in range(r):
-              print("Row {} = {}".format(i, A[i]))
+    print("Row of Matrix A : ")
+    for i in range(r):
+        print("Row {} = {}".format(i, A[i]))
+
 
 def printCM(A):
-       print("Coloumns of Matrix A : ")
-       for j in range(c):
-              print('Coloumns {} = '.format(j))
-              for i in range(r):
-                     print(A[i][j])
-              print('\n')
+    print("Coloumns of Matrix A : ")
+    for j in range(c):
+        print('Coloumns {} = '.format(j))
+        for i in range(r):
+            print(A[i][j])
+        print('\n')
+
+
 def scalarMulti(A, s):
-       n = [[ s*A[i][j] for j in range(c)] for i in range(r)]
-       print('The Scaler Multiplication A = s*M ')
-       printM(n)
+    n = [[s*A[i][j] for j in range(c)] for i in range(r)]
+    print('The Scaler Multiplication A = s*M ')
+    printM(n)
+
 
 def transpose(A):
-       T = [[A[i][j] for i in range(r)] for j in range(c)]
-       print("Transpose of M  = ")
-       for j in range(c):
-              print(T[j])
+    T = [[A[i][j] for i in range(r)] for j in range(c)]
+    print("Transpose of M  = ")
+    for j in range(c):
+        print(T[j])
+
 
 print("Enter Dimension of Matrix ")
 r = int(input("Enter Number of Rows : "))
@@ -44,11 +51,11 @@ c = int(input("Enter Number of Columns : "))
 M = []
 
 for i in range(r):
-       print("Enter Elements of Rows[{}] : ".format(i))
-       M.append([])
-       for j in range(c):
-              n = int(input("Enter No. : "))
-              M[i].append(n)
+    print("Enter Elements of Rows[{}] : ".format(i))
+    M.append([])
+    for j in range(c):
+        n = int(input("Enter No. : "))
+        M[i].append(n)
 
 
 print('''Select Operation :
@@ -58,21 +65,21 @@ print('''Select Operation :
        4. Scalar Multiplication of Matrix.
        5. Transpose of matrix.
        Other. Exit''')
-while True:       
-       ch = int(input("Enter Choice for Operation : "))
-       if ch == 1:
-              printM(M)
-       elif ch == 2:
-              printRM(M)
-       elif ch == 3:
-              printCM(M)
-       elif ch == 4:
-              sc = int(input("Enter Scalar Value : "))
-              scalarMulti(M, sc)
-       elif ch == 5:
-              transpose(M)
-       else :
-              break        
+while True:
+    ch = int(input("Enter Choice for Operation : "))
+    if ch == 1:
+        printM(M)
+    elif ch == 2:
+        printRM(M)
+    elif ch == 3:
+        printCM(M)
+    elif ch == 4:
+        sc = int(input("Enter Scalar Value : "))
+        scalarMulti(M, sc)
+    elif ch == 5:
+        transpose(M)
+    else:
+        break
 
 '''
 Output :

@@ -19,13 +19,13 @@ print('''Select Oprations
 5: Ratation\nAnything: Exit''')
 
 while True:
-    
+
     ch = int(input('Enter Choice of Operation.'))
 
     if ch == 1:
         c1 = complex(input('Enter Complex No. c1: '))
         c2 = complex(input('Enter Complex No. c2: '))
-        print('Addition of 2 Complex Nos(c1 + c2) : ',c1 + c2)
+        print('Addition of 2 Complex Nos(c1 + c2) : ', c1 + c2)
     elif ch == 2:
         s1 = {x for x in s}
         X = [x.real for x in s1]
@@ -56,7 +56,7 @@ while True:
             print('Invalid AngleEnter Only degree 90, 180, 270\b')
     else:
         break
-    
+
 '''
 1: cd C:\python34\scripts 
 2: C:\python34\scripts> pip install matplotlib

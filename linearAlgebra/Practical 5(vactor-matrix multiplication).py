@@ -7,29 +7,37 @@ Aim: Write a program to do the following :
 
 global r1, c1, r2, c2
 
+
 def printMatrix(A):
     for i in range(len(A)):
         print(A[i])
 
+
 def matrixAdd(A, B):
-    C=[[A[i][j] + B[i][j] for j in range(len(B[0]))] for i in range(len(A))]
+    C = [[A[i][j] + B[i][j] for j in range(len(B[0]))] for i in range(len(A))]
     print('Addition of Two Matrix = ')
     printMatrix(C)
 
+
 def matrixMul(A, B):
-    C=[[sum(A[i][k] * B[k][j] for k in range(len(B))) for j in range(len(B[0]))] for i in range(len(A))]
+    C = [[sum(A[i][k] * B[k][j] for k in range(len(B)))
+          for j in range(len(B[0]))] for i in range(len(A))]
     print('Multiplication of Two Matrix = ')
     printMatrix(C)
 
+
 def matrixVecMul(A, v):
-    C=[sum(A[i][j]*v[j] for j in range(len(v))) for i in range(len(A))]
+    C = [sum(A[i][j]*v[j] for j in range(len(v))) for i in range(len(A))]
     print('Matrix Vector Multiplication(M1 * v) = ')
     printMatrix(C)
 
+
 def vecMatrixMul(v, A):
-    C=[sum(v[j]*A[j][i] for j in range(len(v))) for i in range(len(A))]
+    C = [sum(v[j]*A[j][i] for j in range(len(v))) for i in range(len(A))]
     print('Matrix Vector Multiplication(v * MI) = ')
     printMatrix(C)
+
+
 # Matrix from User
 '''   
 print('Enter Dimension of Matrix1 : ')
@@ -42,11 +50,11 @@ for i in range(r1):
     for j in range(c1):
         n = int(input('Enter No. : '))
         M[i].append(n)
-''' 
+'''
 # Matrix defined by me
-M = [[1,2],[3,4]]
-r1=2
-c1=2
+M = [[1, 2], [3, 4]]
+r1 = 2
+c1 = 2
 print('The Entered Matrix M1 is ')
 printMatrix(M)
 
@@ -62,11 +70,11 @@ for i in range(r2):
     for j in range(c2):
         n = int(input('Enter No. : '))
         N[i].append(n)
-'''  
+'''
 # Matrix defined by me
-N = [[4,3],[2,1]]
-r2=2
-c2=2
+N = [[4, 3], [2, 1]]
+r2 = 2
+c2 = 2
 print('The Entered Matrix M2 is ')
 printMatrix(N)
 
@@ -89,7 +97,8 @@ while True:
         if c1 == r2:
             matrixMul(M, N)
         else:
-            print('Invalid Matrix: To Multiply Two Matrices Matrix1.Column == Matrix2.Rows')
+            print(
+                'Invalid Matrix: To Multiply Two Matrices Matrix1.Column == Matrix2.Rows')
     elif ch == 3:
         s = input('Enter Elements of Vector Seprated by Spaces : ')
         v = [int(x) for x in s.split()]
@@ -108,7 +117,7 @@ while True:
             vecMatrixMul(v, M)
     else:
         break
-            
+
 '''
 Output :
 >>> 

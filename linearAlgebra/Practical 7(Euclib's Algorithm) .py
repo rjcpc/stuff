@@ -17,13 +17,13 @@ while n % 2 == 0:
 i = 3
 
 while i <= math.sqrt(n):
-    while n%i == 0:
+    while n % i == 0:
         pf.append(i)
         n = n/i
     i += 2
 if n > 2:
     pf.append(n)
-    
+
 print('Prime Factors of {} are {}'.format(x, pf))
 pf1 = set(pf)
 nf = 1
@@ -34,7 +34,7 @@ for f in pf1:
         if f == f1:
             cnt += 1
         nf *= cnt + 1
-        
+
 print('No. of Factors of {} = {}.'.format(x, nf))
 print('No. of Positive integral solutions = {}.'.format(nf/2))
 

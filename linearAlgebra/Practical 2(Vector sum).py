@@ -7,55 +7,59 @@ Aim : Wright a Program to do the Following:
 4. Find the dot product u and v.
 '''
 
+
 def addv(x, y):
-       return [x[i] + y[i] for i in range(len(x))]
+    return [x[i] + y[i] for i in range(len(x))]
+
 
 def subv(x, y):
-       return [x[i] - y[i] for i in range(len(x))]
+    return [x[i] - y[i] for i in range(len(x))]
 
 
 def multiv(x, s):
-       return [s*x[i] for i in range(len(x))]
+    return [s*x[i] for i in range(len(x))]
+
 
 def dotprod(x, y):
-       return sum([x[i]*y[i] for i in range(len(x))])
+    return sum([x[i]*y[i] for i in range(len(x))])
 
-v=[]
-u=[]
 
-n=int(input("Enter no of elements you want to add in vector : "))
+v = []
+u = []
+
+n = int(input("Enter no of elements you want to add in vector : "))
 print("Enter element of vector u : ")
 for i in range(n):
-       elemu = int(input("Enter Element : "))
-       u.append(elemu)
-       print("Vector u = {}".format(u))
-       
+    elemu = int(input("Enter Element : "))
+    u.append(elemu)
+    print("Vector u = {}".format(u))
+
 print("Enter element of vector v : ")
 for i in range(n):
-       elemv = int(input("Enter Element : "))
-       v.append(elemv)
-       print("Vector v = {}".format(v))
+    elemv = int(input("Enter Element : "))
+    v.append(elemv)
+    print("Vector v = {}".format(v))
 
 while True:
-       print('''Select Vector Opration
+    print('''Select Vector Opration
        1 : Addition
        2 : Substraction
        3 : Scalar Multiplication
        4 : Dot Product
        Other : Exit
        ''')
-       op = int(input("Enter Your Choice : "))
-       if op == 1:
-              print("Addition of Vector u & v is (u + v) : ",addv(u, v))
-       elif op == 2:
-              print("Substraction of Vector u & v is (u - v) : ",subv(u, v))
-       elif op == 3:
-              a = int(input("Enter Value of a : "))
-              print("Scalar Multiplication of Vector u with a is (u.a) : ",multiv(u, a))
-       elif op == 4:
-              print("Dot Product of Vector u & v is (u . v) : ",dotprod(u, v))
-       else :
-              break
+    op = int(input("Enter Your Choice : "))
+    if op == 1:
+        print("Addition of Vector u & v is (u + v) : ", addv(u, v))
+    elif op == 2:
+        print("Substraction of Vector u & v is (u - v) : ", subv(u, v))
+    elif op == 3:
+        a = int(input("Enter Value of a : "))
+        print("Scalar Multiplication of Vector u with a is (u.a) : ", multiv(u, a))
+    elif op == 4:
+        print("Dot Product of Vector u & v is (u . v) : ", dotprod(u, v))
+    else:
+        break
 
 """
 Output:
@@ -117,5 +121,3 @@ Select Vector Opration
        
 Enter Your Choice : 
 """
-              
-              
