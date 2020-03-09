@@ -10,8 +10,9 @@ while i < s:
 
 print(b)
 
+
 def getSecondHighest(b):
-    hi  = mid = lo = 0
+    hi = mid = lo = 0
     for i in range(0, len(b)):
         x = b[i]
         if (x > hi):
@@ -25,7 +26,8 @@ def getSecondHighest(b):
             lo = x
     return mid
 
-print('Seconde Highest Element given in array ',getSecondHighest(b))
+
+print('Seconde Highest Element given in array ', getSecondHighest(b))
 
 
 '''
@@ -41,4 +43,3 @@ Enter Array Element
 [45, 12, 32, 64, 8]
 Seconde Highest Element given in array  45
 '''
-
